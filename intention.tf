@@ -8,7 +8,7 @@ resource "consul_intention" "demo" {
 
 resource "consul_intention" "demo-namespace" {
   source_name      = "svc3"
-  source_namespace = "production"
+  source_namespace = consul_namespace.production.name
   destination_name = "svc2"
   action           = "allow"
 }
