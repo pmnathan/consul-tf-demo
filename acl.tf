@@ -15,7 +15,7 @@ resource "consul_acl_policy" "test" {
 resource "consul_acl_policy" "test_namespace" {
   name        = "my_policy_namespace"
   datacenters = ["prakash"]
-  namespace = "production"
+  namespace = consul_namespace.production.name
   rules       = <<-RULE
     node_prefix "" {
       policy = "read"
