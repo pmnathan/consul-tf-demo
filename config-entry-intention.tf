@@ -11,6 +11,10 @@ resource "consul_config_entry" "config-entry-intentions" {
   {
     Name   = "api"
     Action = "deny"
+  },
+     {
+    Name   = "api2"
+    Action = "allow"
   }
 ]
   })
