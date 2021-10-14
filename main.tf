@@ -1,4 +1,4 @@
 provider "consul" {
-  address    = "127.0.0.1:8500"
-  datacenter = "prakash"
+  address    = var.consul_address
+  datacenter = var.consul_dc
 }
