@@ -10,7 +10,7 @@ resource "consul_config_entry" "config-entry-intentions" {
   },
   {
     Name   = "api"
-    Action = "allow"
+    Action = "deny"
   }
 ]
   })
@@ -28,7 +28,7 @@ resource "consul_config_entry" "config-entry-intentions-namespace" {
   {
     Name      = "prometheus"
     Namespace = "monitoring"
-    Action = "allow"
+    Action = "deny"
   }
 ]
   })
