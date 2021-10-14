@@ -6,7 +6,7 @@ resource "consul_config_entry" "config-entry-intentions" {
     Sources = [
   {
     Name   = "web"
-    Action = "allow"
+    Action = "deny"
   },
   {
     Name   = "api"
