@@ -15,3 +15,12 @@ resource "consul_namespace" "monitoring" {
     foo = "bar"
   }
 }
+
+resource "consul_namespace" "monitoring-singlefamily" {
+  name        = "singlefamily"
+  description = "singlefamily namespace"
+
+  meta = {
+    foo = "bar"
+  }
+}
